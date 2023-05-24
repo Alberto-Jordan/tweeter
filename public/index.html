@@ -1,29 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta Information -->
-    <title>Tweeter - Home Page</title>
+<head>
+  <!-- Meta Information -->
+  <title>Tweeter - Home Page</title>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+  <!-- External CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- App CSS -->
+  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/nav.css">
+  <link rel="stylesheet" href="/styles/header.css">
+  <link rel="stylesheet" href="/styles/new-tweet.css">
 
-    <!-- App CSS -->
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+  <!-- External JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <!-- External JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- App JS -->
+  <script type="text/javascript" src="/scripts/client.js"></script>
 
-    <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
-  </head>
+  <!-- Custom CSS -->
+  <style>
+    /* Add the CSS code here */
+  </style>
 
-  <body>
-    <!-- Top nav bar (fixed) -->
-    <nav>
-      <span>tweeter</span>
-    </nav>
+  <!-- Custom JS -->
+  <script src="/scripts/composer-char-counter.js"></script>
+</head>
+<body>
+  <!-- Top nav bar (fixed) -->
+  <nav>
+    <div class="left-section">
+      <span class="logo">Tweeter</span>
+    </div>
+    <div class="write-tweet">
+      <span class="text">Write a new tweet</span>
+      <i class="icon fa-solid fa-angle-double-down"></i>
+    </div>
+  </nav>
+  <header>
+    <div>
+      <img src="/images/profile-hex.png"> 
+    </div>
+    <br>
+    <div>
+      <h2>John Smith</h2>
+    </div>
+  </header>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container"></main>
-  </body>
+  <!-- Page-specific (main) content here -->
+  <main class="container">
+    <h1>Main Heading</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lorem ut sapien pharetra auctor.</p>
+    <h2>Subheading</h2>
+    <p>Nulla facilisi. Vestibulum dignissim massa ut libero pharetra, in pellentesque neque sollicitudin.</p>
+    <section class="new-tweet">
+      <h2>Compose Tweet</h2>
+      <form>
+        <label for="tweet-text">What are you humming about?</label>
+        <textarea name="text" id="tweet-text"></textarea>
+        <div>
+          <button type="submit">Tweet</button>
+          <output name="counter" class="counter" for="tweet-text">140</output>
+        </div>
+      </form>
+    </section>
+
+    <!-- Add the tweet section here -->
+    <section class="tweets-container">
+      <article class="tweet">
+        <header>
+          <img src="/images/profile-hex.png" alt="Profile Picture">
+          <div>
+            <h3 class="tweet-author">Stevens steve</h3>
+            <p class="tweet-username">@SteveStevens</p>
+          </div>
+        </header>
+        <div class="tweet-content">
+          <p class="tweet-text">This is a sample tweet.</p>
+        </div>
+        <footer>
+          <div class="tweet-icons">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-retweet"></i>
+            <i class="fas fa-share"></i>
+          </div>
+        </footer>
+      </article>
+    </section>
+  </main>
+</body>
 </html>
