@@ -19,17 +19,22 @@
 
 .new-tweet textarea {
   border: none;
-  border-bottom: 1px solid #545149;
-  font-size: 16px;
-  padding: 5px;
-  margin-bottom: 10px;
+  border-bottom: 4px solid black;
+  background: transparent;
+  width: 100%;
+  outline: none; 
   resize: none;
+  height: 50px;
+  font-size: 16px;
+  padding: 0;
+  margin-bottom: 10px;
 }
 
 .new-tweet div {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "bungee";
 }
 
 .new-tweet button {
@@ -49,6 +54,33 @@
 }
 
 .new-tweet input[type="text"] {
-  width: 20px;
-  font-family: inherit;
+  border: none;
+  border-bottom: 4px solid black;
+  background: transparent;
+  width: 100%;
+  outline: none; 
+  font-size: 16px;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.tweet-stats {
+  display: flex;
+  justify-content: space-between;
+  font-family: "bungee";
+}
+
+#tweet-btn {
+  background-color: #4056A1;
+  border: none;
+  padding: 5px 10px;
+  color: #FFFFFF;
+}
+
+.error {
+  color: #FF0000;
+  font-weight: bold;
+  text-shadow: 1px 1px #FF0000;
+  margin: 0;
+  display: none;
 }
