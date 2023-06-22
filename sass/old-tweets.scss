@@ -1,0 +1,89 @@
+article {
+  border: 4px solid black;
+}
+
+article:hover {
+  box-shadow: 10px 5px 5px lightgray;
+}
+
+article > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+article > footer {
+  width: 98%;
+  padding: 0.5rem 1rem;
+  margin: auto;
+  border-top: 4px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer > p {
+  font-size: 0.875rem;
+}
+
+.social-tags {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.fa-flag:hover, .fa-retweet:hover, .fa-heart:hover {
+  color: rgb(255, 225, 0);
+}
+
+.icon-name {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-name > p, footer > p {
+  margin: 0;
+}
+
+.username {
+  color: lightgray;
+}
+
+.old-tweet-text {
+  padding-left: 2rem;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+#old-tweets {
+  margin: 2rem 0;
+}
+
+#old-tweets > article {
+  margin: 1rem 0;
+}
+
+.toggle-scroll {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+.toggle-scroll:hover {
+  cursor: pointer;
+}
+
+.toggle-scroll-arrows {
+  padding-top: 13px;
+  padding-left: 15px;
+  color: #FFFFFF;
+}
+
+.hidden {
+  display: none;
+}

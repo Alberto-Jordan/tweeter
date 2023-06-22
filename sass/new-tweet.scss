@@ -1,0 +1,86 @@
+.new-tweet {
+  margin-top: 20px;
+}
+
+.new-tweet h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.new-tweet form {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-tweet label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.new-tweet textarea {
+  border: none;
+  border-bottom: 4px solid black;
+  background: transparent;
+  width: 100%;
+  outline: none; 
+  resize: none;
+  height: 50px;
+  font-size: 16px;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.new-tweet div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "bungee";
+}
+
+.new-tweet button {
+  background-color: #4056A1;
+  color: #FFFFFF;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: "Bungee", sans-serif;
+}
+
+.new-tweet .counter {
+  font-size: 14px;
+  color: #545149;
+  font-family: "Bungee", sans-serif;
+}
+
+.new-tweet input[type="text"] {
+  border: none;
+  border-bottom: 4px solid black;
+  background: transparent;
+  width: 100%;
+  outline: none; 
+  font-size: 16px;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.tweet-stats {
+  display: flex;
+  justify-content: space-between;
+  font-family: "bungee";
+}
+
+#tweet-btn {
+  background-color: #4056A1;
+  border: none;
+  padding: 5px 10px;
+  color: #FFFFFF;
+}
+
+.error {
+  color: #FF0000;
+  font-weight: bold;
+  text-shadow: 1px 1px #FF0000;
+  margin: 0;
+  display: none;
+}

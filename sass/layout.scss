@@ -1,0 +1,35 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+
+
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f4f1ec; 
+}
+
+
+/*
+ * Global layout stuff
+ */
+
+body {
+  color: #f4f1ec;
+  background-color: #f4f1ec;
+  font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+ */
+
+ nav .logo {
+  font-family: Bungee, sans-serif;
+}
+
