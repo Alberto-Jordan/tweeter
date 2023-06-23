@@ -23,5 +23,5 @@ Users can compose Tweets with a maximum of 140 characters, which instantly appea
 
 ## Final Product
 
-! [screenshot of desktop](https://github.com/Alberto-Jordan/tweeter/blob/master/docs/Desktop-tweeter.png)
-! [sreenshot of mobile](https://github.com/Alberto-Jordan/tweeter/blob/master/docs/Mobile-tweeter.png)
+![Desktop](https://github.com/Alberto-Jordan/tweeter/blob/master/docs/Desktop-tweeter.png)
+![Mobile](https://github.com/Alberto-Jordan/tweeter/blob/master/docs/Mobile-tweeter.png)
