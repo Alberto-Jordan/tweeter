@@ -6,30 +6,33 @@
 
 
 
-main {
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
-  background-color: #f4f1ec; 
-}
-
 
 /*
  * Global layout stuff
  */
+ html {
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 
 body {
-  color: #f4f1ec;
-  background-color: #f4f1ec;
+  background-color: #F4F1EC;
+  color: #545149;
   font-size: 24px;
-  font-family: 'Source Sans Pro', sans-serif;
 }
+
+
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-
- nav .logo {
-  font-family: Bungee, sans-serif;
+.container {
+  width: 90%;
+  margin: auto;
+  background-color: #F4F1EC;
 }
-

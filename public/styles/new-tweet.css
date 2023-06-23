@@ -1,69 +1,43 @@
 .new-tweet {
-  margin-top: 20px;
+  margin-top: 3rem;
 }
 
-.new-tweet h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.new-tweet form {
-  display: flex;
-  flex-direction: column;
-}
-
-.new-tweet label {
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-
-.new-tweet textarea {
+#tweet-text {
   border: none;
   border-bottom: 4px solid black;
   background: transparent;
   width: 100%;
-  outline: none; 
+  outline: none;
   resize: none;
   height: 50px;
-  font-size: 16px;
-  padding: 0;
-  margin-bottom: 10px;
 }
 
-.new-tweet div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: "bungee";
+.form-toggle {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
 }
 
-.new-tweet button {
-  background-color: #4056A1;
-  color: #FFFFFF;
-  padding: 8px 16px;
-  font-size: 16px;
-  border: none;
+.form-toggle:hover {
   cursor: pointer;
-  font-family: "Bungee", sans-serif;
 }
 
-.new-tweet .counter {
-  font-size: 14px;
-  color: #545149;
-  font-family: "Bungee", sans-serif;
+.bounce {
+  animation-name: bounce;
+  animation-timing-function: ease;
 }
 
-.new-tweet input[type="text"] {
-  border: none;
-  border-bottom: 4px solid black;
-  background: transparent;
-  width: 100%;
-  outline: none; 
-  font-size: 16px;
-  padding: 0;
-  margin-bottom: 10px;
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
-
 .tweet-stats {
   display: flex;
   justify-content: space-between;

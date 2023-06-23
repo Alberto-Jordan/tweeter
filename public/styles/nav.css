@@ -1,52 +1,23 @@
+/* Styles the navigation bar */
 nav {
   height: 120px;
-  width: 100%;
+  width: 100vw;
   background-color: #4056A1;
   color: #FFFFFF;
-  padding: 0 1.5em;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   position: fixed;
-  top: 0;
-  z-index: 1;
+  padding: 0 2em;
 }
 
-nav > span {
-  font-family: "bungee", "sans-serif";
-  margin-left: 1.5em;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  color: #FFFFFF; /* Set text color to white */
-}
-
-nav > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-right: 1.5em;
-}
-
-nav > div > p {
-  margin: 0;
-}
-
-.write-tweet .text {
-  color: #FFFFFF; /* Set "Write a new tweet" text to white */
-}
-
-.write-tweet .icon {
-  color: red; /* Set angle down button to red */
-}
-
+/* Styles the span element within the navigation bar */
 nav span {
   font-family: "bungee", "sans-serif";
   display: flex;
   align-items: center;
 }
 
+/* Styles the div elements within the navigation bar */
 nav div {
   display: flex;
   align-items: center;
@@ -54,14 +25,17 @@ nav div {
   justify-content: center;
 }
 
+/* Styles the paragraphs within the div elements */
 nav div p {
   margin: 0;
 }
 
+/* Styles the span element within the div elements */
 nav div span {
-  color: #FF0000;
+  color: #f9003a;
 }
 
+/* Styles the company span within the navigation bar */
 nav .company span {
   color: #FFFFFF;
   font-size: 2rem;

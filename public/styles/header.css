@@ -1,17 +1,60 @@
-/* header.css */
 
-header {
+/* Sets the styling for the header inside the body element */
+body > header {
   height: 520px;
   width: 100%;
-  background-color: #a14055;
-  background-image: url("../images/light-fabric.png");
   display: flex;
-  flex-direction: column;
+  align-items: flex-end;
   justify-content: center;
-  align-items: center;
-  margin-top: 120px;
+  padding-bottom: 2.25rem;
+  background-color: #56a140; 
+  background-image: url("../images/light-fabric.png"); 
 }
 
+/* Styles the container for the profile information */
+#profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+/* Styles the heading element within the username class */
+.username > h2 {
+  margin: 0; 
+}
 
+/* Media query for screens */
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    justify-content: space-between;
+  }
 
+  /* Styles the container element */
+  .container {
+    width: 55%;
+    margin: 200px 0 0 50px;
+    position: absolute;
+    right: 50px;
+    z-index: -1; 
+  }
+
+  /* Adjusts the styling for the header element within the body element */
+  body > header {
+    width: 30%;
+    height: 400px;
+    margin-top: 200px;
+    margin-left: 50px;
+    position: fixed;
+  }
+
+  /* Adjusts the top margin of the main element */
+  body > main {
+    margin-top: 200px;
+  }
+
+  /* Adjusts the top margin of the new-tweet section */
+  section.new-tweet {
+    margin-top: 0;
+  }
+}

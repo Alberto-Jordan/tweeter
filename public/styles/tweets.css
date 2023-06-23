@@ -1,16 +1,15 @@
-
 /* Sets border style */
-article {
+.tweet-container {
   border: 4px solid black;
 }
 
-/* Adds box shadow when hovering */
-article:hover {
+/* Adds box shadow when hovering over tweet */
+.tweet-container:hover {
   box-shadow: 10px 5px 5px lightgray;
 }
 
 /* Styles the header section */
-article > header {
+.tweet-container > header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,7 +17,7 @@ article > header {
 }
 
 /* Styles the footer section */
-article > footer {
+.tweet-container > footer {
   width: 98%;
   padding: 0.5rem 1rem;
   margin: auto;
@@ -28,56 +27,56 @@ article > footer {
 }
 
 /* Styles paragraphs inside footer section */
-footer > p {
+.tweet-container footer > p {
   font-size: 0.875rem;
 }
 
 /* Styles the social tags section */
-.social-tags {
+.tweet-container .social-tags {
   display: flex;
   gap: 0.5rem;
   font-size: 0.875rem;
 }
 
 /* Changes color of flag, retweet, and heart icons on hover */
-.fa-flag:hover,
-.fa-retweet:hover,
-.fa-heart:hover {
-  color: rgb(161, 64, 86);
+.tweet-container .fa-flag:hover,
+.tweet-container .fa-retweet:hover,
+.tweet-container .fa-heart:hover {
+  color: #a14056;
 }
 
 /* Styles the icon and name section */
-.icon-name {
+.tweet-container .icon-name {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
 /* Styles paragraphs inside icon and name section, and footer section */
-.icon-name > p,
-footer > p {
+.tweet-container .icon-name > p,
+.tweet-container footer > p {
   margin: 0;
 }
 
 /* Sets color for username */
-.username {
-  color: rgb(	84, 81, 73);
+.tweet-container .username {
+  color: #545149;
 }
 
-/* Styles the text content of old tweets */
-.old-tweet-text {
+/* Styles the text content of tweets */
+.tweet-container .tweet-text {
   padding-left: 2rem;
   overflow-wrap: break-word;
   hyphens: auto;
 }
 
-/* Styles the container for old tweets */
-#old-tweets {
+/* Styles the container for tweets */
+#tweets {
   margin: 2rem 0;
 }
 
-/* Styles each individual article within the old tweets section */
-#old-tweets > article {
+/* Styles each individual tweet container within the tweets section */
+#tweets > .tweet-container {
   margin: 1rem 0;
 }
 
@@ -85,7 +84,7 @@ footer > p {
 .toggle-scroll {
   height: 50px;
   width: 50px;
-  background-color: red;
+  background-color: #f9003a;
   border-radius: 50%;
   position: fixed;
   bottom: 50px;
@@ -98,7 +97,7 @@ footer > p {
 }
 
 /* Styles the arrows within the scroll toggle button */
-.toggle-scroll-arrows {
+.toggle-scroll .toggle-scroll-arrows {
   padding-top: 13px;
   padding-left: 15px;
   color: #FFFFFF;
