@@ -24,6 +24,7 @@ body {
   background-color: #F4F1EC;
   color: #545149;
   font-size: 24px;
+  overflow: auto;
 }
 
 
@@ -35,4 +36,5 @@ body {
   width: 90%;
   margin: auto;
   background-color: #F4F1EC;
+  overflow: auto;
 }

@@ -32,7 +32,7 @@ body > header {
 
   /* Styles the container element */
   .container {
-    width: 55%;
+    width: 800px;
     margin: 200px 0 0 50px;
     position: absolute;
     right: 50px;

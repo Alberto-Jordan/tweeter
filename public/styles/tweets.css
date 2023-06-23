@@ -65,9 +65,9 @@
 
 /* Styles the text content of tweets */
 .tweet-container .tweet-text {
-  padding-left: 2rem;
+  padding: 2rem;
   overflow-wrap: break-word;
-  hyphens: auto;
+  max-width: 100%;
 }
 
 /* Styles the container for tweets */
