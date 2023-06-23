@@ -1,7 +1,9 @@
+/* Adds top margin to new-tweet class */
 .new-tweet {
   margin-top: 3rem;
 }
 
+/* Styles the tweet text area */
 #tweet-text {
   border: none;
   border-bottom: 4px solid black;
@@ -12,21 +14,25 @@
   height: 50px;
 }
 
+/* Sets animation for form-toggle class */
 .form-toggle {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   transform-origin: bottom;
 }
 
+/* Cursor style for form-toggle hover */
 .form-toggle:hover {
   cursor: pointer;
 }
 
+/* Animation for bounce class */
 .bounce {
   animation-name: bounce;
   animation-timing-function: ease;
 }
 
+/* Defines bounce animation */
 @keyframes bounce {
   0% {
     transform: translateY(0);
@@ -38,12 +44,15 @@
     transform: translateY(0);
   }
 }
+
+/* Styles for tweet stats */
 .tweet-stats {
   display: flex;
   justify-content: space-between;
   font-family: "bungee";
 }
 
+/* Styles for tweet button */
 #tweet-btn {
   background-color: #4056A1;
   border: none;
@@ -51,6 +60,7 @@
   color: #FFFFFF;
 }
 
+/* Styles for error message */
 .error {
   color: #FF0000;
   font-weight: bold;
